@@ -56,3 +56,8 @@ dkms.conf
 /LinkedList/LinkedList.vcxproj.filters
 /LinkedList/LinkedList.vcxproj.user
 /LinkedList/.vs/LinkedList
+/addTwoNumbers/.vs/addTwoNumbers
+/addTwoNumbers/addTwoNumbers.sln
+/addTwoNumbers/addTwoNumbers.vcxproj
+/addTwoNumbers/addTwoNumbers.vcxproj.filters
+/addTwoNumbers/addTwoNumbers.vcxproj.user

@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/LinkedList/LinkedList/x64/Debug
+/LinkedList/LinkedList.sln
+/LinkedList/LinkedList.vcxproj
+/LinkedList/LinkedList.vcxproj.filters
+/LinkedList/LinkedList.vcxproj.user
+/LinkedList/.vs/LinkedList

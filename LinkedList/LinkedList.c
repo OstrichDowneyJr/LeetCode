@@ -26,19 +26,19 @@
      current->next->next = NULL;
  }
 
- void init_node(node_t* head,int size, int* val) {
-     node_t* current = head;
-     while (current->next != NULL) {
+ node_t* init_node(int size, int* numb) {
+     node_t* current = NULL; 
+     current = (node_t*)malloc(sizeof(node_t));
+     for (int i = 0;i < size-1;i++) {
+         current->val = numb[i]; // Why its dereferencing NULL pointer?  
+         current->next= (node_t*)malloc(sizeof(node_t));
          current = current->next;
-     }
-
-     current->next = (node_t*)malloc(sizeof(node_t));
-     current->next->val = val;
-     current->next->next = NULL;
+     } 
+     return current;
  }
 
  void push_at_beginning(node_t** head, int val) {
-
+//TODO function not working correctly
      node_t* new_node;
      new_node = (node_t*)malloc(sizeof(node_t));
      new_node->val = val;
@@ -107,12 +107,10 @@
 
 int main(int argc, char** argv) {
 
-    node_t* l1 = (node_t*)malloc (sizeof(node_t));
-    l1->val = 1;
-    l1->next = NULL;
-    push_node(l1, 3);
+    int val[] = { 1,2,3 };
+    node_t* l1 = init_node(3, val);
     print_list_node(l1);
-    push_node(l1, 30);
+    push_node(l1, 4);
     print_list_node(l1);
 
 	return 0;
